@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="villes">
+        <item>Marrakech</item>
+        <item>Fes</item>
+        <item>Casablanca</item>
+    </array>
+</resources>
