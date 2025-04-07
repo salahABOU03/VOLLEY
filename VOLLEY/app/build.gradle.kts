@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.emsi.projetws"
+    namespace = "com.example.projetws"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.emsi.projetws"
-        minSdk = 26
+        applicationId = "com.example.projetws"
+        minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -33,13 +33,13 @@ android {
 
 dependencies {
 
-    implementation ("com.google.android.material:material:1.8.0")
-    implementation(libs.volley)
-    implementation("com.google.code.gson:gson:2.10.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation("com.mcxiaoke.volley:library:1.0.19")
+    implementation ("com.google.code.gson:gson:2.10.1")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

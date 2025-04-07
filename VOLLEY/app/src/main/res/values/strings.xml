@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">projetws</string>
-    <string name="nom">Nom: </string>
-    <string name="prenom">Prenom: </string>
-    <string name="ville">Ville: </string>
-    <string name="sexe">Sexe: </string>
-    <string name="homme">Homme</string>
-    <string name="femme">Femme</string>
-    <string name="add">Add</string>
-    <string name="lister">Lister</string>
 </resources>

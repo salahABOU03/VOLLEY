@@ -2,123 +2,87 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="20dp"
-    tools:context=".AddEtudiant">
-
+    android:padding="10dp"
+    tools:context="school.leblond.getudiant.AddEtudiant">
 
     <TextView
-        android:text="@string/nom"
+        android:id="@+id/textView"
+        style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text"
-        android:id="@+id/textView"/>
+        android:text="Nom : " />
 
     <EditText
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:id="@+id/nom"
+        style="@style/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:textColor="@color/black"
-        android:background="@drawable/edittext_background"
-        android:textSize="16sp"
-        android:id="@+id/nom"/>
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <TextView
-        android:text="@string/prenom"
+        android:id="@+id/textView2"
+        style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text"
-        android:id="@+id/textView2"/>
+        android:text="Prenom :" />
 
     <EditText
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:id="@+id/prenom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:textColor="@color/black"
-        android:background="@drawable/edittext_background"
-        android:textSize="16sp"
-        android:id="@+id/prenom"/>
+        android:ems="10"
+        style="@style/input"
+        android:inputType="textPersonName" />
 
     <TextView
-        android:text="@string/ville"
+        android:id="@+id/textView3"
+        style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text"
-        android:id="@+id/textView3"/>
+        android:text="Ville" />
 
     <Spinner
-        android:entries="@array/villes"
-        android:inputType="textPersonName"
+        android:id="@+id/ville"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/input"
-        android:id="@+id/ville"/>
+        android:entries="@array/villes"/>
+
 
     <TextView
-        android:text="@string/sexe"
+        android:id="@+id/textView4"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexe :" />
+
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/text"
-        android:id="@+id/textView4"/>
-    
-    <RadioGroup
-        android:orientation="horizontal"
-        style="@style/text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/m"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/homme"
-            />
+            android:text="homme" />
+
         <RadioButton
             android:id="@+id/f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/femme"/>
+            android:text="femme" />
     </RadioGroup>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        >
-
-        <Button
-            style="@style/button"
-            android:id="@+id/add"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/add"/>
-
-        <Space
-            android:layout_width="16dp"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            style="@style/button"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/lister"
-            android:layout_weight="1"
-            android:text="@string/lister"
-            />
-
-    </LinearLayout>
-
-
-
+        android:text="Add" />
 </LinearLayout>
